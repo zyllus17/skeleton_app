@@ -10,6 +10,8 @@ Follow TODOs to get all the features started in a few minutes.
 
 <input type="checkbox" checked /> Linting
 
+<input type="checkbox" checked /> Workspace Settings
+
 <input type="checkbox" disabled /> App Icon
 
 <input type="checkbox" disabled /> Light/Dark Theme Mode
@@ -17,8 +19,6 @@ Follow TODOs to get all the features started in a few minutes.
 <input type="checkbox" disabled /> Flavour
 
 <input type="checkbox" disabled /> Multi-language support
-
-<input type="checkbox" disabled /> Project Settings
 
 <input type="checkbox" disabled /> FVM
 
@@ -28,3 +28,5 @@ Splash Screen - Created using [flutter_native_splash](https://pub.dev/packages/f
 2. Then run this command in terminal- `dart run flutter_native_splash:create`
 
 Linting - Change linting rules from [analysis_options.yaml](analysis_options.yaml) file
+
+Workspace Settings - Change Workspace settings from [settings.json](.vscode/settings.json)
