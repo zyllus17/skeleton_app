@@ -8,4 +8,5 @@ Follow TODOs to get all the features started in a few minutes.
 
 Splash Screen - Using [flutter_native_splash](https://pub.dev/packages/flutter_native_splash) package.
 
-- To change splash screen image, just follow #TODO1(Replace splash.png in assets folder with your splash image).
+1. To change splash screen image, just follow #TODO1(Replace splash.png in assets folder with your splash image).
+2. Then run this command in terminal- `dart run flutter_native_splash:create`
