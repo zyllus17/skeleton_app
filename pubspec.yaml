@@ -86,6 +86,7 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
 
   #TODO1: Just replace splash.png image in assets folder with your new splash screen image.
+  # Then run this command in terminal- `dart run flutter_native_splash:create`
 flutter_native_splash:
   android: true
   ios: true
