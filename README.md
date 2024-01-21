@@ -6,7 +6,23 @@ Follow TODOs to get all the features started in a few minutes.
 
 ## Features
 
-Splash Screen - Using [flutter_native_splash](https://pub.dev/packages/flutter_native_splash) package.
+<input type="checkbox" checked /> Splash Screen
+
+<input type="checkbox" checked /> Linting
+
+<input type="checkbox" disabled /> App Icon
+
+<input type="checkbox" disabled /> Light/Dark Theme Mode
+
+<input type="checkbox" disabled /> Flavour
+
+<input type="checkbox" disabled /> Multi-language support
+
+<input type="checkbox" disabled /> Project Settings
+
+Splash Screen - Created using [flutter_native_splash](https://pub.dev/packages/flutter_native_splash) package.
 
 1. To change splash screen image, just follow #TODO1(Replace splash.png in assets folder with your splash image).
 2. Then run this command in terminal- `dart run flutter_native_splash:create`
+
+Linting - Change linting rules from [analysis_options.yaml](analysis_options.yaml) file
