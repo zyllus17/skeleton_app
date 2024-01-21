@@ -20,6 +20,8 @@ Follow TODOs to get all the features started in a few minutes.
 
 <input type="checkbox" disabled /> Project Settings
 
+<input type="checkbox" disabled /> FVM
+
 Splash Screen - Created using [flutter_native_splash](https://pub.dev/packages/flutter_native_splash) package.
 
 1. To change splash screen image, just follow #TODO1(Replace splash.png in assets folder with your splash image).
