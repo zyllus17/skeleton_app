@@ -1,0 +1,40 @@
+{
+    "editor.fontSize": 18,
+    "editor.minimap.enabled": false,
+    "editor.suggestSelection": "first",
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.inlineSuggest.enabled": true,
+    "explorer.compactFolders": false,
+    "files.autoSave": "afterDelay",
+    "dart.closingLabels": true,
+    "files.autoSaveDelay": 100000,
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "dart.previewFlutterUiGuides": true,
+    "dart.previewFlutterUiGuidesCustomTracking": true,
+    "terminal.integrated.tabs.enabled": true,
+    "files.defaultLanguage": "${activeEditorLanguage}",
+    "dart.showInspectorNotificationsForWidgetErrors": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.cursorBlinking": "phase",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "workbench.colorCustomizations": {},
+    "diffEditor.useInlineViewWhenSpaceIsLimited": false,
+    "inlineChat.showGutterIcon": "always",
+    "editor.codeActionsOnSave": {},
+    "debug.toolBarLocation": "commandCenter",
+    "dart.flutterSdkPath": "/Users/marufhassan/flutter",
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.cursorBlinking": "smooth",
+        "editor.rulers": [
+            80
+        ],
+        "editor.tabCompletion": "on"
+    },
+    "editor.formatOnSave": true,
+    "workbench.colorTheme": "Bearded Theme Monokai Black",
+    "diffEditor.ignoreTrimWhitespace": false,
+}
