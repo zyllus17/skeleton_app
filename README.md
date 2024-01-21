@@ -1,16 +1,11 @@
 # skeleton_app
 
-A new Flutter project.
+Skeleton app for Flutter with prebuilt common features which are required in every app like splash screen, app logo, dark mode, multi-language etc.
 
-## Getting Started
+Follow TODOs to get all the features started in a few minutes.
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+Splash Screen - Using [flutter_native_splash](https://pub.dev/packages/flutter_native_splash) package.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- To change splash screen image, just follow #TODO1(Replace splash.png in assets folder with your splash image).
