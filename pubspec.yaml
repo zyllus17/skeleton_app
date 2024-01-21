@@ -85,7 +85,7 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
 
-  #TODO: Just replace splash.png image in assets folder with your new splash screen image.
+  #TODO1: Just replace splash.png image in assets folder with your new splash screen image.
 flutter_native_splash:
   android: true
   ios: true
