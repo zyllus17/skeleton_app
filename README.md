@@ -12,13 +12,13 @@ Follow TODOs to get all the features started in a few minutes.
 
 <input type="checkbox" checked /> Workspace Settings
 
+<input type="checkbox" checked /> Multi-language support
+
 <input type="checkbox" disabled /> App Icon
 
 <input type="checkbox" disabled /> Light/Dark Theme Mode
 
 <input type="checkbox" disabled /> Flavour
-
-<input type="checkbox" disabled /> Multi-language support
 
 <input type="checkbox" disabled /> FVM
 
