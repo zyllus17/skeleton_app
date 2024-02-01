@@ -32,18 +32,18 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   flutter_native_splash: ^2.3.9
+  slang: ^3.29.0
+  slang_flutter: ^3.29.0
+  flutter_localizations:
+    sdk: flutter
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
   flutter_lints: ^2.0.0
   dart_code_metrics_presets: ^2.8.0
+  slang_build_runner: ^3.29.0
+  build_runner: ^2.4.8
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
