@@ -43,10 +43,10 @@ Follow TODOs to get all the features started in a few minutes.
 
 1.  Create file for language that you want in [i18n folder](lib/i18n/) with the name strings\_(languageCode).i18n.json.
 
-        For eg if you want Spanish language which has language code of `es`. The file name will be [strings_es.i18n.json](lib/i18n/strings.i18n.json).
+    For eg if you want Spanish language which has language code of `es`. The file name will be [strings_es.i18n.json](lib/i18n/strings.i18n.json).
 
 2.  Add the text that you want in the app. Make sure that there should always be same and equal key in both files. If you miss any, it will throw an error. So while adding make sure you add it in the other file as well.
 
-        For eg if you add {"hello":"Hello"} in strings.i18n.json,you must add {"hello":"Hola"} in strings_es.i18n.json as well. ["hello" key being the important factor]
+    For eg if you add {"hello":"Hello"} in strings.i18n.json,you must add {"hello":"Hola"} in strings_es.i18n.json as well. ["hello" key being the important factor]
 
 3.  After adding the file make sure to save the file and then run `dart run slang` in the terminal for the changes to take place.
