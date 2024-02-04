@@ -44,3 +44,4 @@ app.*.map.json
 
 # VSCode related
 .fvm/*
+!.fvm/fvm_config.json
