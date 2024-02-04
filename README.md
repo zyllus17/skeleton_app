@@ -53,6 +53,12 @@ Follow TODOs to get all the features started in a few minutes.
 
 3.  After adding the file make sure to save the file and then run `dart run slang` in the terminal for the changes to take place.
 
+4.  Use the String as `t.hello` in Flutter.
+
+If you have a String where the value can be dynamic, then use `${value}`
+For eg if the String needs to be `You earned 10 points` where the 10 can be any number then write the key value pair as `"you_earned_points":"You earned ${value} points"` in i18n.json file and in Flutter you will write
+`Text(t.you_earned_points(value: '10'))`
+
 ## FVM - Flutter Version Manager
 
 - Helps in managing multiple Flutter SDK for old projects and moving them to the latest package updates
