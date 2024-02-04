@@ -22,6 +22,8 @@ Follow TODOs to get all the features started in a few minutes.
 
 ✗ Flavour
 
+✗ Local Storage(HIVE)
+
 ## Splash Screen
 
 - Created using [flutter_native_splash](https://pub.dev/packages/flutter_native_splash) package.
