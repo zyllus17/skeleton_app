@@ -14,13 +14,13 @@ Follow TODOs to get all the features started in a few minutes.
 
 ✓ Multi-language support
 
+✓ FVM
+
 ✗ App Icon
 
 ✗ Light/Dark Theme Mode
 
 ✗ Flavour
-
-✗ FVM
 
 ## Splash Screen
 
@@ -50,3 +50,21 @@ Follow TODOs to get all the features started in a few minutes.
     For eg if you add {"hello":"Hello"} in strings.i18n.json,you must add {"hello":"Hola"} in strings_es.i18n.json as well. ["hello" key being the important factor]
 
 3.  After adding the file make sure to save the file and then run `dart run slang` in the terminal for the changes to take place.
+
+## FVM - Flutter Version Manager
+
+- Helps in managing multiple Flutter SDK for old projects and moving them to the latest package updates
+
+1. Check the [installation process here](https://fvm.app/docs/getting_started/installation)
+
+2. Check if fvm installed successfully by running `fvm --version`. You will see a version no. like `2.4.1`
+
+3. Install the Flutter SDK you want to move to by running fvm install followed by version number.
+
+   For eg if you want Flutter SDK 3.16.2 type in terminal `fvm install 3.16.2`
+
+4. After installing the SDK, you can check all the available SDK by running `fvm list`.
+
+5. Choose the one you want to run and type fvm use version no.
+
+   For eg if you want to use 3.7.3 then type in terminal `fvm use 3.7.3`
