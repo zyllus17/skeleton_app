@@ -15,7 +15,7 @@ class HomeScreen extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => SettingsScreen()),
+                MaterialPageRoute(builder: (context) => const SettingsScreen()),
               );
             },
             icon: const Icon(Icons.settings),
