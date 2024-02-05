@@ -16,13 +16,15 @@ Follow TODOs to get all the features started in a few minutes.
 
 ✓ FVM
 
-✗ App Icon
+✓ Flavor
+
+✓ App Icon
 
 ✗ Light/Dark Theme Mode
 
-✗ Flavour
-
 ✗ Local Storage(HIVE)
+
+✗ Device Preview
 
 ## Splash Screen
 
