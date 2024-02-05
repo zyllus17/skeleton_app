@@ -1,0 +1,6 @@
+#include "Generated.xcconfig"
+
+FLUTTER_TARGET=lib/main_stg.dart
+ASSET_PREFIX=stg
+BUNDLE_NAME=Skeleton Stg
+BUNDLE_DISPLAY_NAME=Skeleton Stg
