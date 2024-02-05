@@ -1,11 +1,12 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:skeleton_app/i18n/strings.g.dart';
 import 'package:skeleton_app/pages/home/home.ui.dart';
-import 'package:skeleton_app/pages/settings/settings.ui.dart';
 
-void main() {
+Future<void> main() async {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
 
   ///Stays in splash screen as long as the app builds
