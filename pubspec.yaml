@@ -44,6 +44,7 @@ dev_dependencies:
   dart_code_metrics_presets: ^2.8.0
   slang_build_runner: ^3.29.0
   build_runner: ^2.4.8
+  flutter_flavorizr: ^2.2.1
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -97,3 +98,39 @@ flutter_native_splash:
   android_12:
     image: assets/splash.png
     color: "#FFFFFF"
+
+flavorizr:
+  ide: "vscode"
+  flavors:
+    dev:
+      app:
+        name: "Skeleton Dev"
+        icon: assets/splash.png
+      android:
+        applicationId: com.skeleton.dev
+      ios:
+        bundleId: com.skeleton.dev
+    device_preview:
+      app:
+        name: "Skeleton DevPreview"
+        icon: assets/splash.png
+      android:
+        applicationId: com.skeleton.dev
+      ios:
+        bundleId: com.skeleton.dev
+    stg:
+      app:
+        name: "Skeleton Stg"
+        icon: assets/splash.png
+      android:
+        applicationId: com.skeleton.stg
+      ios:
+        bundleId: com.skeleton.stg
+    prod:
+      app:
+        name: "Skeleton"
+        icon: assets/splash.png
+      android:
+        applicationId: com.skeleton.prod
+      ios:
+        bundleId: com.skeleton.prod
