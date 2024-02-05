@@ -21,10 +21,36 @@ Follow TODOs to get all the features started in a few minutes.
 ✓ App Icon
 
 ✗ Light/Dark Theme Mode
-
 ✗ Local Storage(HIVE)
-
 ✗ Device Preview
+✗ CI/CD
+✗ Sentry
+✗ Notification(OneSignal)
+✗ Patrol(Testing)
+✗ Dio
+✗ Audio
+✗ Carousel Slider
+✗ Video Player
+✗ Confetti
+✗ Emoji
+✗ File Picker
+✗ Firebase
+✗ Flex Color Scheme
+✗ HTML
+✗ Gleap
+✗ Graphql
+✗ API
+✗ Package Info
+✗ Photo View
+✗ Pin Code
+✗ Rive
+✗ Stories View
+✗ Video Thumbnail
+✗ Jitsi
+✗ Flutter Callkit
+✗ Shimmer
+✗ Permission Handler
+✗ Cached Image
 
 ## Splash Screen
 
