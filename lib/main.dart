@@ -2,50 +2,53 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:responsive_framework/breakpoint.dart';
+import 'package:responsive_framework/responsive_breakpoints.dart';
+import 'package:skeleton_app/constants/appKey.const.dart';
 import 'package:skeleton_app/i18n/strings.g.dart';
-import 'package:skeleton_app/pages/home/home.ui.dart';
+import 'package:skeleton_app/utils/main_file.utils.dart';
 
 Future<void> main() async {
-  WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  final ref = ProviderContainer();
+  await initializeApp(ref);
 
-  ///Stays in splash screen as long as the app builds
-  FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
-
-  ///Sets language according to the device settings if language format is available
-  LocaleSettings.useDeviceLocale();
-  runApp(TranslationProvider(child: const App()));
+  runApp(
+    ProviderScope(
+      child: TranslationProvider(
+        child: const App(),
+      ),
+    ),
+  );
 }
 
-class App extends StatefulWidget {
+class App extends HookConsumerWidget {
   const App({super.key});
-
   @override
-  State<App> createState() => _AppState();
-}
-
-class _AppState extends State<App> {
-  @override
-  void initState() {
-    ///Removes Splash screen after build is completed
-    FlutterNativeSplash.remove();
-    super.initState();
-  }
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
+  Widget build(BuildContext context, WidgetRef ref) {
+    return MaterialApp.router(
+      title: AppKeys.appName,
+      builder: (context, child) {
+        return child != null
+            ? ResponsiveBreakpoints.builder(
+                child: child,
+                breakpoints: [
+                  const Breakpoint(start: 0, end: 480, name: MOBILE),
+                  const Breakpoint(start: 481, end: 800, name: TABLET),
+                  const Breakpoint(start: 801, end: 1920, name: DESKTOP),
+                  const Breakpoint(
+                    start: 1921,
+                    end: double.infinity,
+                    name: '4K',
+                  ),
+                ],
+              )
+            : const SizedBox();
+      },
       debugShowCheckedModeBanner: false,
       locale: TranslationProvider.of(context).flutterLocale,
       supportedLocales: AppLocaleUtils.supportedLocales,
       localizationsDelegates: GlobalMaterialLocalizations.delegates,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const HomeScreen(),
     );
   }
 }
