@@ -9,6 +9,7 @@ import 'package:skeleton_app/constants/appKey.const.dart';
 
 import 'package:skeleton_app/flavors.dart';
 import 'package:skeleton_app/i18n/strings.g.dart';
+import 'package:skeleton_app/utils/go_router.utils.dart';
 import 'package:skeleton_app/utils/main_file.utils.dart';
 
 Future<void> main() async {
@@ -41,6 +42,7 @@ class AppDEV extends HookConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final router = ref.watch(routerProvider);
     useEffect(
       () {
         FlutterNativeSplash.remove();
@@ -72,9 +74,9 @@ class AppDEV extends HookConsumerWidget {
       locale: TranslationProvider.of(context).flutterLocale,
       supportedLocales: AppLocaleUtils.supportedLocales,
       localizationsDelegates: GlobalMaterialLocalizations.delegates,
-      // routeInformationParser: router.routeInformationParser,
-      // routerDelegate: router.routerDelegate,
-      // routeInformationProvider: router.routeInformationProvider,
+      routeInformationParser: router.routeInformationParser,
+      routerDelegate: router.routerDelegate,
+      routeInformationProvider: router.routeInformationProvider,
     );
   }
 }
