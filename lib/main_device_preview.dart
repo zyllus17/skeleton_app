@@ -8,6 +8,7 @@ import 'package:responsive_framework/breakpoint.dart';
 import 'package:responsive_framework/responsive_breakpoints.dart';
 import 'package:skeleton_app/constants/appKey.const.dart';
 import 'package:skeleton_app/i18n/strings.g.dart';
+import 'package:skeleton_app/utils/go_router.utils.dart';
 import 'package:skeleton_app/utils/main_file.utils.dart';
 
 import 'flavors.dart';
@@ -33,6 +34,7 @@ class AppDevicePreview extends HookConsumerWidget {
   const AppDevicePreview({super.key});
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final router = ref.watch(routerProvider);
     useEffect(
       () {
         FlutterNativeSplash.remove();
@@ -65,9 +67,9 @@ class AppDevicePreview extends HookConsumerWidget {
       locale: DevicePreview.locale(context),
       supportedLocales: AppLocaleUtils.supportedLocales,
       localizationsDelegates: GlobalMaterialLocalizations.delegates,
-      // routeInformationParser: router.routeInformationParser,
-      // routerDelegate: router.routerDelegate,
-      // routeInformationProvider: router.routeInformationProvider,
+      routeInformationParser: router.routeInformationParser,
+      routerDelegate: router.routerDelegate,
+      routeInformationProvider: router.routeInformationProvider,
     );
   }
 }
