@@ -1,4 +1,5 @@
 {
     "language": "English",
-    "hello": "Hello"
+    "hello": "Hello",
+    "error_page_text": "Uh-Oh\nSomething went wrong."
 }

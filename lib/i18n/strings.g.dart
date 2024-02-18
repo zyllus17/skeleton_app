@@ -4,9 +4,9 @@
 /// To regenerate, run: `dart run slang`
 ///
 /// Locales: 2
-/// Strings: 4 (2 per locale)
+/// Strings: 6 (3 per locale)
 ///
-/// Built on 2024-02-17 at 10:27 UTC
+/// Built on 2024-02-17 at 16:14 UTC
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
@@ -150,6 +150,7 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 	// Translations
 	String get language => 'English';
 	String get hello => 'Hello';
+	String get error_page_text => 'Uh-Oh\nSomething went wrong.';
 }
 
 // Path: <root>
@@ -178,6 +179,7 @@ class _StringsEs implements Translations {
 	// Translations
 	@override String get language => 'Espanol';
 	@override String get hello => 'Hola';
+	@override String get error_page_text => 'Uh-Oh\nSomething went wrong.';
 }
 
 /// Flat map(s) containing all translations.
@@ -188,6 +190,7 @@ extension on Translations {
 		switch (path) {
 			case 'language': return 'English';
 			case 'hello': return 'Hello';
+			case 'error_page_text': return 'Uh-Oh\nSomething went wrong.';
 			default: return null;
 		}
 	}
@@ -198,6 +201,7 @@ extension on _StringsEs {
 		switch (path) {
 			case 'language': return 'Espanol';
 			case 'hello': return 'Hola';
+			case 'error_page_text': return 'Uh-Oh\nSomething went wrong.';
 			default: return null;
 		}
 	}
